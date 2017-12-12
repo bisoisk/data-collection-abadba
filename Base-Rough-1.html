@@ -11806,15 +11806,21 @@ div#notebook {
 <h3 id="How-to-know-from-Data-data-which-type-of-machine-learning-algorithm-will-be-used?">How to know from Data data which type of machine learning algorithm will be used?<a class="anchor-link" href="#How-to-know-from-Data-data-which-type-of-machine-learning-algorithm-will-be-used?">&#182;</a></h3><h3 id="How-can-we-know-that-which-type-of-machine-learning-algorithm-will-be-used-from-data?">How can we know that which type of machine learning algorithm will be used from data?<a class="anchor-link" href="#How-can-we-know-that-which-type-of-machine-learning-algorithm-will-be-used-from-data?">&#182;</a></h3>
 </div>
 </div>
-</div>NB-https://blogs.sas.com/content/subconsciousmusings/2017/04/12/machine-learning-algorithm-use/
-
-
-A typical question asked by a beginner, when facing a wide variety of machine learning algorithms, is “which algorithm should I use?” The answer to the question varies depending on many factors, including:
-
-The size, quality, and nature of data.
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>NB-<a href="https://blogs.sas.com/content/subconsciousmusings/2017/04/12/machine-learning-algorithm-use/">https://blogs.sas.com/content/subconsciousmusings/2017/04/12/machine-learning-algorithm-use/</a></p>
+<p>A typical question asked by a beginner, when facing a wide variety of machine learning algorithms, is “which algorithm should I use?” The answer to the question varies depending on many factors, including:</p>
+<p>The size, quality, and nature of data.
 The available computational time.
 The urgency of the task.
-What you want to do with the data.
+What you want to do with the data.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -14124,93 +14130,60 @@ hzpU+Wu3BUoAAAAASUVORK5CYII=
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Machine</span> <span class="n">Learning</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">foundation</span> <span class="k">for</span> <span class="n">today</span><span class="err">’</span><span class="n">s</span> <span class="n">insights</span> <span class="n">on</span> <span class="n">customer</span><span class="p">,</span> <span class="n">products</span><span class="p">,</span> <span class="n">costs</span> <span class="ow">and</span> <span class="n">revenues</span> <span class="n">which</span> <span class="n">learns</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">data</span> <span class="n">provided</span> <span class="n">to</span> <span class="n">its</span> <span class="n">algorithms</span><span class="o">.</span>
-<span class="n">Some</span> <span class="n">of</span> <span class="n">the</span> <span class="n">most</span> <span class="n">common</span> <span class="n">examples</span> <span class="n">of</span> <span class="n">machine</span> <span class="n">learning</span> <span class="n">are</span> <span class="n">Netflix</span><span class="err">’</span><span class="n">s</span> <span class="n">algorithms</span> <span class="n">to</span> <span class="n">give</span> <span class="n">movie</span> <span class="n">suggestions</span> <span class="n">based</span> <span class="n">on</span> <span class="n">movies</span> <span class="n">you</span> <span class="n">have</span> <span class="n">watched</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">past</span> <span class="ow">or</span> <span class="n">Amazon</span><span class="err">’</span><span class="n">s</span> <span class="n">algorithms</span> <span class="n">that</span> <span class="n">recommend</span> <span class="n">products</span> <span class="n">based</span> <span class="n">on</span> <span class="n">other</span> <span class="n">customers</span> <span class="n">bought</span> <span class="n">before</span><span class="o">.</span>
-<span class="n">Typical</span> <span class="n">algorithm</span> <span class="n">model</span> <span class="n">selection</span> <span class="n">can</span> <span class="n">be</span> <span class="n">decided</span> <span class="n">broadly</span> <span class="n">on</span> <span class="n">following</span> <span class="n">questions</span><span class="p">:</span>
-<span class="err">·</span>        <span class="n">How</span> <span class="n">much</span> <span class="n">data</span> <span class="n">do</span> <span class="n">you</span> <span class="n">have</span> <span class="o">&amp;</span> <span class="ow">is</span> <span class="n">it</span> continuous<span class="o">?</span>
-<span class="err">·</span>        <span class="n">Is</span> <span class="n">it</span> <span class="n">classification</span> <span class="ow">or</span> <span class="n">regression</span> problem<span class="o">?</span>
-<span class="err">·</span>        <span class="n">Predefined</span> <span class="n">variables</span> <span class="p">(</span><span class="n">Labeled</span><span class="p">),</span> <span class="n">unlabeled</span> <span class="ow">or</span> mix<span class="o">?</span>
-<span class="err">·</span>        <span class="n">Data</span> <span class="k">class</span> <span class="nc">skewed</span><span class="o">?</span>
-<span class="err">·</span>        <span class="n">What</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">goal</span><span class="err">?</span> <span class="err">–</span> <span class="n">predict</span> <span class="ow">or</span> rank<span class="o">?</span>
-<span class="err">·</span>        <span class="n">Result</span> <span class="n">interpretation</span> <span class="n">easy</span> <span class="ow">or</span> hard<span class="o">?</span>
-<span class="n">Here</span> <span class="n">are</span> <span class="n">the</span> <span class="n">most</span> <span class="n">used</span> <span class="n">algorithms</span> <span class="k">for</span> <span class="n">various</span> <span class="n">business</span> <span class="n">problems</span><span class="p">:</span>
- 
-<span class="n">Decision</span> <span class="n">Trees</span><span class="p">:</span> <span class="n">Decision</span> <span class="n">tree</span> <span class="n">output</span> <span class="ow">is</span> <span class="n">very</span> <span class="n">easy</span> <span class="n">to</span> <span class="n">understand</span> <span class="n">even</span> <span class="k">for</span> <span class="n">people</span> <span class="kn">from</span> <span class="nn">non</span><span class="o">-</span><span class="n">analytical</span> <span class="n">background</span><span class="o">.</span> <span class="n">It</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">require</span> <span class="nb">any</span> <span class="n">statistical</span> <span class="n">knowledge</span> <span class="n">to</span> <span class="n">read</span> <span class="ow">and</span> <span class="n">interpret</span> <span class="n">them</span><span class="o">.</span> <span class="n">Fastest</span> <span class="n">way</span> <span class="n">to</span> <span class="n">identify</span> <span class="n">most</span> <span class="n">significant</span> <span class="n">variables</span> <span class="ow">and</span> <span class="n">relation</span> <span class="n">between</span> <span class="n">two</span> <span class="ow">or</span> <span class="n">more</span> <span class="n">variables</span><span class="o">.</span> <span class="n">Decision</span> <span class="n">Trees</span> <span class="n">are</span> <span class="n">excellent</span> <span class="n">tools</span> <span class="k">for</span> <span class="n">helping</span> <span class="n">you</span> <span class="n">to</span> <span class="n">choose</span> <span class="n">between</span> <span class="n">several</span> <span class="n">courses</span> <span class="n">of</span> <span class="n">action</span><span class="o">.</span> <span class="n">Most</span> <span class="n">popular</span> <span class="n">decision</span> <span class="n">trees</span> <span class="n">are</span> <span class="n">CART</span><span class="p">,</span> <span class="n">CHAID</span><span class="p">,</span> <span class="ow">and</span> <span class="n">C4</span><span class="o">.</span><span class="mi">5</span> <span class="n">etc</span><span class="o">.</span>
-<span class="n">In</span> <span class="n">general</span><span class="p">,</span> <span class="n">decision</span> <span class="n">trees</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="ow">in</span> <span class="n">real</span><span class="o">-</span><span class="n">world</span> <span class="n">applications</span> <span class="n">such</span> <span class="k">as</span><span class="p">:</span>
-<span class="err">·</span>        <span class="n">Investment</span> <span class="n">decisions</span>
-<span class="err">·</span>        <span class="n">Customer</span> <span class="n">churn</span>
-<span class="err">·</span>        <span class="n">Banks</span> <span class="n">loan</span> <span class="n">defaulters</span>
-<span class="err">·</span>        <span class="n">Build</span> <span class="n">vs</span> <span class="n">Buy</span> <span class="n">decisions</span>
-<span class="err">·</span>        <span class="n">Company</span> <span class="n">mergers</span> <span class="n">decisions</span>
-<span class="err">·</span>        <span class="n">Sales</span> <span class="n">lead</span> <span class="n">qualifications</span>
- 
-<span class="n">Logistic</span> <span class="n">Regression</span><span class="p">:</span> <span class="n">Logistic</span> <span class="n">regression</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">powerful</span> <span class="n">statistical</span> <span class="n">way</span> <span class="n">of</span> <span class="n">modeling</span> <span class="n">a</span> <span class="n">binomial</span> <span class="n">outcome</span> <span class="k">with</span> <span class="n">one</span> <span class="ow">or</span> <span class="n">more</span> <span class="n">explanatory</span> <span class="n">variables</span><span class="o">.</span> <span class="n">It</span> <span class="n">measures</span> <span class="n">the</span> <span class="n">relationship</span> <span class="n">between</span> <span class="n">the</span> <span class="n">categorical</span> <span class="n">dependent</span> <span class="n">variable</span> <span class="ow">and</span> <span class="n">one</span> <span class="ow">or</span> <span class="n">more</span> <span class="n">independent</span> <span class="n">variables</span> <span class="n">by</span> <span class="n">estimating</span> <span class="n">probabilities</span> <span class="n">using</span> <span class="n">a</span> <span class="n">logistic</span> <span class="n">function</span><span class="p">,</span> <span class="n">which</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">cumulative</span> <span class="n">logistic</span> <span class="n">distribution</span><span class="o">.</span>
-<span class="n">In</span> <span class="n">general</span><span class="p">,</span> <span class="n">regressions</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="ow">in</span> <span class="n">real</span><span class="o">-</span><span class="n">world</span> <span class="n">applications</span> <span class="n">such</span> <span class="k">as</span><span class="p">:</span>
-<span class="err">·</span>        <span class="n">Predicting</span> <span class="n">the</span> <span class="n">Customer</span> <span class="n">Churn</span>
-<span class="err">·</span>        <span class="n">Credit</span> <span class="n">Scoring</span> <span class="o">&amp;</span> <span class="n">Fraud</span> <span class="n">Detection</span>
-<span class="err">·</span>        <span class="n">Measuring</span> <span class="n">the</span> <span class="n">effectiveness</span> <span class="n">of</span> <span class="n">marketing</span> <span class="n">campaigns</span>
- 
-<span class="n">Support</span> <span class="n">Vector</span> <span class="n">Machines</span><span class="p">:</span> <span class="n">Support</span> <span class="n">Vector</span> <span class="n">Machine</span> <span class="p">(</span><span class="n">SVM</span><span class="p">)</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">supervised</span> <span class="n">machine</span> <span class="n">learning</span> <span class="n">technique</span> <span class="n">that</span> <span class="ow">is</span> <span class="n">widely</span> <span class="n">used</span> <span class="ow">in</span> <span class="n">pattern</span> <span class="n">recognition</span> <span class="ow">and</span> <span class="n">classification</span> <span class="n">problems</span> <span class="o">-</span> <span class="n">when</span> <span class="n">your</span> <span class="n">data</span> <span class="n">has</span> <span class="n">exactly</span> <span class="n">two</span> <span class="n">classes</span><span class="o">.</span>
-<span class="n">In</span> <span class="n">general</span><span class="p">,</span> <span class="n">SVM</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="ow">in</span> <span class="n">real</span><span class="o">-</span><span class="n">world</span> <span class="n">applications</span> <span class="n">such</span> <span class="k">as</span><span class="p">:</span>
-<span class="err">·</span>        <span class="n">detecting</span> <span class="n">persons</span> <span class="k">with</span> <span class="n">common</span> <span class="n">diseases</span> <span class="n">such</span> <span class="k">as</span> <span class="n">diabetes</span>
-<span class="err">·</span>        <span class="n">hand</span><span class="o">-</span><span class="n">written</span> <span class="n">character</span> <span class="n">recognition</span>
-<span class="err">·</span>        <span class="n">text</span> <span class="n">categorization</span> <span class="err">–</span> <span class="n">news</span> <span class="n">articles</span> <span class="n">by</span> <span class="n">topics</span>
-<span class="err">·</span>        <span class="n">stock</span> <span class="n">market</span> <span class="n">price</span> <span class="n">prediction</span>
- 
-<span class="n">Naive</span> <span class="n">Bayes</span><span class="p">:</span> <span class="n">It</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">classification</span> <span class="n">technique</span> <span class="n">based</span> <span class="n">on</span> <span class="n">Bayes</span><span class="err">’</span> <span class="n">theorem</span> <span class="ow">and</span> <span class="n">very</span> <span class="n">easy</span> <span class="n">to</span> <span class="n">build</span> <span class="ow">and</span> <span class="n">particularly</span> <span class="n">useful</span> <span class="k">for</span> <span class="n">very</span> <span class="n">large</span> <span class="n">data</span> <span class="n">sets</span><span class="o">.</span> <span class="n">Along</span> <span class="k">with</span> <span class="n">simplicity</span><span class="p">,</span> <span class="n">Naive</span> <span class="n">Bayes</span> <span class="ow">is</span> <span class="n">known</span> <span class="n">to</span> <span class="n">outperform</span> <span class="n">even</span> <span class="n">highly</span> <span class="n">sophisticated</span> <span class="n">classification</span> <span class="n">methods</span><span class="o">.</span> <span class="n">Naive</span> <span class="n">Bayes</span> <span class="ow">is</span> <span class="n">also</span> <span class="n">a</span> <span class="n">good</span> <span class="n">choice</span> <span class="n">when</span> <span class="n">CPU</span> <span class="ow">and</span> <span class="n">memory</span> <span class="n">resources</span> <span class="n">are</span> <span class="n">a</span> <span class="n">limiting</span> <span class="n">factor</span>
-<span class="n">In</span> <span class="n">general</span><span class="p">,</span> <span class="n">Naive</span> <span class="n">Bayes</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="ow">in</span> <span class="n">real</span><span class="o">-</span><span class="n">world</span> <span class="n">applications</span> <span class="n">such</span> <span class="k">as</span><span class="p">:</span>
-<span class="err">·</span>        <span class="n">Sentiment</span> <span class="n">analysis</span> <span class="ow">and</span> <span class="n">text</span> <span class="n">classification</span>
-<span class="err">·</span>        <span class="n">Recommendation</span> <span class="n">systems</span> <span class="n">like</span> <span class="n">Netflix</span><span class="p">,</span> <span class="n">Amazon</span>
-<span class="err">·</span>        <span class="n">To</span> <span class="n">mark</span> <span class="n">an</span> <span class="n">email</span> <span class="k">as</span> <span class="n">spam</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">spam</span>
-<span class="err">·</span>        <span class="n">Facebook</span> <span class="n">like</span> <span class="n">face</span> <span class="n">recognition</span>
- 
-<span class="n">Apriori</span><span class="p">:</span> <span class="n">This</span> <span class="n">algorithm</span> <span class="n">generates</span> <span class="n">association</span> <span class="n">rules</span> <span class="kn">from</span> <span class="nn">a</span> <span class="n">given</span> <span class="n">data</span> <span class="nb">set</span><span class="o">.</span> <span class="n">Association</span> <span class="n">rule</span> <span class="n">implies</span> <span class="n">that</span> <span class="k">if</span> <span class="n">an</span> <span class="n">item</span> <span class="n">A</span> <span class="n">occurs</span><span class="p">,</span> <span class="n">then</span> <span class="n">item</span> <span class="n">B</span> <span class="n">also</span> <span class="n">occurs</span> <span class="k">with</span> <span class="n">a</span> <span class="n">certain</span> <span class="n">probability</span><span class="o">.</span>
-<span class="n">In</span> <span class="n">general</span><span class="p">,</span> <span class="n">Apriori</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="ow">in</span> <span class="n">real</span><span class="o">-</span><span class="n">world</span> <span class="n">applications</span> <span class="n">such</span> <span class="k">as</span><span class="p">:</span>
-<span class="err">·</span>        <span class="n">Market</span> <span class="n">basket</span> <span class="n">analysis</span> <span class="n">like</span> <span class="n">amazon</span> <span class="o">-</span> <span class="n">products</span> <span class="n">purchased</span> <span class="n">together</span>
-<span class="err">·</span>        <span class="n">Auto</span> <span class="n">complete</span> <span class="n">functionality</span> <span class="n">like</span> <span class="n">Google</span> <span class="n">to</span> <span class="n">provide</span> <span class="n">words</span> <span class="n">which</span> <span class="n">come</span> <span class="n">together</span>
-<span class="err">·</span>        <span class="n">Identify</span> <span class="n">Drugs</span> <span class="ow">and</span> <span class="n">their</span> <span class="n">effects</span> <span class="n">on</span> <span class="n">patients</span>
- 
-<span class="n">Random</span> <span class="n">Forest</span><span class="p">:</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">ensemble</span> <span class="n">of</span> <span class="n">decision</span> <span class="n">trees</span><span class="o">.</span> <span class="n">It</span> <span class="n">can</span> <span class="n">solve</span> <span class="n">both</span> <span class="n">regression</span> <span class="ow">and</span> <span class="n">classification</span> <span class="n">problems</span> <span class="k">with</span> <span class="n">large</span> <span class="n">data</span> <span class="n">sets</span><span class="o">.</span> <span class="n">It</span> <span class="n">also</span> <span class="n">helps</span> <span class="n">identify</span> <span class="n">most</span> <span class="n">significant</span> <span class="n">variables</span> <span class="kn">from</span> <span class="nn">thousands</span> <span class="n">of</span> <span class="nb">input</span> <span class="n">variables</span><span class="o">.</span>
-<span class="n">In</span> <span class="n">general</span><span class="p">,</span> <span class="n">Random</span> <span class="n">Forest</span> <span class="n">can</span> <span class="n">be</span> <span class="n">used</span> <span class="ow">in</span> <span class="n">real</span><span class="o">-</span><span class="n">world</span> <span class="n">applications</span> <span class="n">such</span> <span class="k">as</span><span class="p">:</span>
-<span class="err">·</span>        <span class="n">Predict</span> <span class="n">patients</span> <span class="k">for</span> <span class="n">high</span> <span class="n">risks</span>
-<span class="err">·</span>        <span class="n">Predict</span> <span class="n">parts</span> <span class="n">failures</span> <span class="ow">in</span> <span class="n">manufacturing</span>
-<span class="err">·</span>        <span class="n">Predict</span> <span class="n">loan</span> <span class="n">defaulters</span>
-<span class="n">The</span> <span class="n">most</span> <span class="n">powerful</span> <span class="n">form</span> <span class="n">of</span> <span class="n">machine</span> <span class="n">learning</span> <span class="n">being</span> <span class="n">used</span> <span class="n">today</span><span class="p">,</span> <span class="ow">is</span> <span class="n">called</span>  <span class="err">“</span><span class="n">Deep</span> <span class="n">Learning</span><span class="err">”</span><span class="o">.</span>
-<span class="n">In</span> <span class="n">today</span><span class="err">’</span><span class="n">s</span>  <span class="n">Digital</span> <span class="n">Transformation</span> <span class="n">age</span><span class="p">,</span> <span class="n">most</span> <span class="n">businesses</span> <span class="n">will</span> <span class="n">tap</span> <span class="n">into</span> <span class="n">machine</span> <span class="n">learning</span> <span class="n">algorithms</span> <span class="k">for</span> <span class="n">their</span> <span class="n">operational</span> <span class="ow">and</span> <span class="n">customer</span><span class="o">-</span><span class="n">facing</span> <span class="n">functions</span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Machine Learning is the foundation for today’s insights on customer, products, costs and revenues which learns from the data provided to its algorithms.
+Some of the most common examples of machine learning are Netflix’s algorithms to give movie suggestions based on movies you have watched in the past or Amazon’s algorithms that recommend products based on other customers bought before.
+Typical algorithm model selection can be decided broadly on following questions:
+·        How much data do you have &amp; is it continuous?
+·        Is it classification or regression problem?
+·        Predefined variables (Labeled), unlabeled or mix?
+·        Data class skewed?
+·        What is the goal? – predict or rank?
+·        Result interpretation easy or hard?
+Here are the most used algorithms for various business problems:</p>
+<p>Decision Trees: Decision tree output is very easy to understand even for people from non-analytical background. It does not require any statistical knowledge to read and interpret them. Fastest way to identify most significant variables and relation between two or more variables. Decision Trees are excellent tools for helping you to choose between several courses of action. Most popular decision trees are CART, CHAID, and C4.5 etc.
+In general, decision trees can be used in real-world applications such as:
+·        Investment decisions
+·        Customer churn
+·        Banks loan defaulters
+·        Build vs Buy decisions
+·        Company mergers decisions
+·        Sales lead qualifications</p>
+<p>Logistic Regression: Logistic regression is a powerful statistical way of modeling a binomial outcome with one or more explanatory variables. It measures the relationship between the categorical dependent variable and one or more independent variables by estimating probabilities using a logistic function, which is the cumulative logistic distribution.
+In general, regressions can be used in real-world applications such as:
+·        Predicting the Customer Churn
+·        Credit Scoring &amp; Fraud Detection
+·        Measuring the effectiveness of marketing campaigns</p>
+<p>Support Vector Machines: Support Vector Machine (SVM) is a supervised machine learning technique that is widely used in pattern recognition and classification problems - when your data has exactly two classes.
+In general, SVM can be used in real-world applications such as:
+·        detecting persons with common diseases such as diabetes
+·        hand-written character recognition
+·        text categorization – news articles by topics
+·        stock market price prediction</p>
+<p>Naive Bayes: It is a classification technique based on Bayes’ theorem and very easy to build and particularly useful for very large data sets. Along with simplicity, Naive Bayes is known to outperform even highly sophisticated classification methods. Naive Bayes is also a good choice when CPU and memory resources are a limiting factor
+In general, Naive Bayes can be used in real-world applications such as:
+·        Sentiment analysis and text classification
+·        Recommendation systems like Netflix, Amazon
+·        To mark an email as spam or not spam
+·        Facebook like face recognition</p>
+<p>Apriori: This algorithm generates association rules from a given data set. Association rule implies that if an item A occurs, then item B also occurs with a certain probability.
+In general, Apriori can be used in real-world applications such as:
+·        Market basket analysis like amazon - products purchased together
+·        Auto complete functionality like Google to provide words which come together
+·        Identify Drugs and their effects on patients</p>
+<p>Random Forest: is an ensemble of decision trees. It can solve both regression and classification problems with large data sets. It also helps identify most significant variables from thousands of input variables.
+In general, Random Forest can be used in real-world applications such as:
+·        Predict patients for high risks
+·        Predict parts failures in manufacturing
+·        Predict loan defaulters
+The most powerful form of machine learning being used today, is called  “Deep Learning”.
+In today’s  Digital Transformation age, most businesses will tap into machine learning algorithms for their operational and customer-facing functions</p>
 
 </div>
 </div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-6-cd05571125dd&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>rides<span class="ansi-yellow-intense-fg ansi-bold">.</span>head<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;rides&#39; is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -14654,7 +14627,7 @@ hzpU+Wu3BUoAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">NeuralNetwork</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -14758,6 +14731,312 @@ hzpU+Wu3BUoAAAAASUVORK5CYII=
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="How-machine-learning-is-practiced..means-what-is-machine-learning-Flow?">How machine learning is practiced..means what is machine learning Flow?<a class="anchor-link" href="#How-machine-learning-is-practiced..means-what-is-machine-learning-Flow?">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Machine-Learning-in-Practice">Machine Learning in Practice<a class="anchor-link" href="#Machine-Learning-in-Practice">&#182;</a></h5><p>Machine learning algorithms are only a very small part of using machine learning in practice as a data analyst or data scientist. In practice, the process often looks like:</p>
+<h4 id="Start-Loop">Start Loop<a class="anchor-link" href="#Start-Loop">&#182;</a></h4><p>Understand the domain, prior knowledge and goals. Talk to domain experts. Often the goals are very unclear. You often have more things to try then you can possibly implement.</p>
+<p>Data integration, selection, cleaning and pre-processing. This is often the most time consuming part. It is important to have high quality data. The more data you have, the more it sucks because the data is dirty. Garbage in, garbage out.</p>
+<p>Learning models. The fun part. This part is very mature. The tools are general.</p>
+<p>Interpreting results. Sometimes it does not matter how the model works as long it delivers results. Other domains require that the model is understandable. You will be challenged by human experts.</p>
+<p>Consolidating and deploying discovered knowledge. The majority of projects that are successful in the lab are not used in practice. It is very hard to get something used.</p>
+<h3 id="End-Loop">End Loop<a class="anchor-link" href="#End-Loop">&#182;</a></h3><p>It is not a one-shot process, it is a cycle. You need to run the loop until you get a result that you can use in practice. Also, the data can change, requiring a new loop.</p>
+<p>Some good link is there below for reference</p>
+<p><a href="https://machinelearningmastery.com/basic-concepts-in-machine-learning/">https://machinelearningmastery.com/basic-concepts-in-machine-learning/</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Understand-the-domain,-prior-knowledge-and-goals">Understand the domain, prior knowledge and goals<a class="anchor-link" href="#Understand-the-domain,-prior-knowledge-and-goals">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Data-integration,-selection,-cleaning-and-pre-processing">Data integration, selection, cleaning and pre-processing<a class="anchor-link" href="#Data-integration,-selection,-cleaning-and-pre-processing">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Learning-models">Learning models<a class="anchor-link" href="#Learning-models">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Interpreting-results">Interpreting results<a class="anchor-link" href="#Interpreting-results">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="So-i-have-doubt...I-have-some-time-series-data?Then-How-to-encode-the-same-..means-how-to-pre-processing-the-data-as-machine-will-knw-either-0-or-1.">So i have doubt...I have some time series data?Then How to encode the same ..means how to pre processing the data as machine will knw either 0 or 1.<a class="anchor-link" href="#So-i-have-doubt...I-have-some-time-series-data?Then-How-to-encode-the-same-..means-how-to-pre-processing-the-data-as-machine-will-knw-either-0-or-1.">&#182;</a></h5><p>Then how many types of Data is there?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Application of Machine learning in OIl and Gas sector..</p>
+<p><a href="https://www.linkedin.com/pulse/5-common-sense-analytics-oil-gas-jane-ren">https://www.linkedin.com/pulse/5-common-sense-analytics-oil-gas-jane-ren</a></p>
+<p>Application of Machine learning in Exommerce</p>
+<p><a href="http://www.hbs.edu/faculty/Publication%20Files/kris%20Analytics%20for%20an%20Online%20Retailer_6ef5f3e6-48e7-4923-a2d4-607d3a3d943c.pdf">http://www.hbs.edu/faculty/Publication%20Files/kris%20Analytics%20for%20an%20Online%20Retailer_6ef5f3e6-48e7-4923-a2d4-607d3a3d943c.pdf</a></p>
+
+<pre><code>Predictive maintenance through Microsoft Azure..
+
+
+https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/cortana-analytics-playbook-predictive-maintenance</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Predictive maintenance through ML example in Azure machine R studion...</p>
+<p><a href="https://gallery.cortanaintelligence.com/Experiment/Predictive-Maintenance-Modelling-Guide-Experiment-1">https://gallery.cortanaintelligence.com/Experiment/Predictive-Maintenance-Modelling-Guide-Experiment-1</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://studio.azureml.net/Community?packageUri=https%3A%2F%2Fstorage.azureml.net%2Fdirectories%2F372ab9bbab2a47ada35301daa430f68e%2Fitems&amp;communityUri=https%3A%2F%2Fgallery.cortanaintelligence.com%2FNotebook%2FPredictive-Maintenance-Modelling-Guide-Python-Notebook-1&amp;entityType=Notebook&amp;entityId=Predictive-Maintenance-Modelling-Guide-Python-Notebook-14">https://studio.azureml.net/Community?packageUri=https%3A%2F%2Fstorage.azureml.net%2Fdirectories%2F372ab9bbab2a47ada35301daa430f68e%2Fitems&amp;communityUri=https%3A%2F%2Fgallery.cortanaintelligence.com%2FNotebook%2FPredictive-Maintenance-Modelling-Guide-Python-Notebook-1&amp;entityType=Notebook&amp;entityId=Predictive-Maintenance-Modelling-Guide-Python-Notebook-14</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Here</span> <span class="n">related</span> <span class="n">to</span> <span class="n">Collaboration</span> <span class="o">...</span><span class="n">Prediction</span> <span class="n">there</span> <span class="ow">is</span> <span class="n">some</span> <span class="n">process</span> <span class="n">to</span> <span class="n">follow</span><span class="o">..</span><span class="n">Here</span> <span class="n">sample</span>
+<span class="n">process</span> <span class="n">follwed</span> <span class="k">for</span> <span class="n">Predictive</span> <span class="n">Series</span> <span class="n">Analytics</span> <span class="n">refered</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">MS</span> <span class="n">azure</span> <span class="n">plattform</span><span class="o">..</span>
+
+
+<span class="n">Outline</span>
+<span class="n">Problem</span> <span class="n">Description</span>
+<span class="n">Data</span> <span class="n">Sources</span>
+<span class="n">Telemetry</span>
+<span class="n">Errors</span>
+<span class="n">Maintenance</span>
+<span class="n">Machines</span>
+<span class="n">Failures</span>
+<span class="n">Feature</span> <span class="n">Engineering</span>
+<span class="n">Lag</span> <span class="n">Features</span> <span class="kn">from</span> <span class="nn">Telemetry</span>
+<span class="n">Lag</span> <span class="n">Features</span> <span class="kn">from</span> <span class="nn">Errors</span>
+<span class="n">Days</span> <span class="n">Since</span> <span class="n">Last</span> <span class="n">Replacement</span> <span class="kn">from</span> <span class="nn">Maintenance</span>
+<span class="n">Machine</span> <span class="n">Features</span>
+<span class="n">Label</span> <span class="n">Construction</span>
+<span class="n">Modelling</span>
+<span class="n">Training</span><span class="p">,</span> <span class="n">Validation</span> <span class="ow">and</span> <span class="n">Testing</span>
+<span class="n">Evaluation</span>
+<span class="n">Summary</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nice topic related to different Data pre processing ,ike Normalization and Standaradisation..</p>
+<p><a href="http://sebastianraschka.com/Articles/2014_about_feature_scaling.html#reading-in-the-dataset">http://sebastianraschka.com/Articles/2014_about_feature_scaling.html#reading-in-the-dataset</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nice topic simple neural network...with deep learning also some Data pre processing idea..</p>
+<p><a href="https://matrices.io/deep-neural-network-from-scratch/">https://matrices.io/deep-neural-network-from-scratch/</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Scaling</span> <span class="n">Vs</span> <span class="n">Normalisation</span><span class="o">.</span>
+
+
+
+<span class="n">Normalization</span> <span class="n">vs</span><span class="o">.</span> <span class="n">scaling</span>
+<span class="n">up</span> <span class="n">vote</span>
+<span class="mi">22</span>
+<span class="n">down</span> <span class="n">vote</span>
+<span class="n">favorite</span>
+<span class="mi">11</span>
+<span class="n">What</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">difference</span> <span class="n">between</span> <span class="n">data</span> <span class="s1">&#39;Normalization&#39;</span> <span class="ow">and</span> <span class="n">data</span> <span class="s1">&#39;Scaling&#39;</span><span class="err">?</span> <span class="n">Till</span> <span class="n">now</span> <span class="n">I</span> <span class="n">thought</span> <span class="n">both</span> <span class="n">terms</span> <span class="n">refers</span> <span class="n">to</span> <span class="n">same</span> <span class="n">process</span> <span class="n">but</span> <span class="n">now</span> <span class="n">I</span> <span class="n">realize</span> <span class="n">there</span> <span class="ow">is</span> <span class="n">something</span> <span class="n">more</span> <span class="n">that</span> <span class="n">I</span> <span class="n">don</span><span class="s1">&#39;t know/understand. Also if there is a difference between Normalization and Scaling, when should we use Normalization but not Scaling and vice versa?</span>
+
+<span class="n">Please</span> <span class="n">elaborate</span> <span class="k">with</span> <span class="n">some</span> <span class="n">example</span><span class="o">.</span>
+
+<span class="n">data</span><span class="o">-</span><span class="n">transformation</span> <span class="n">scales</span> <span class="n">normality</span> <span class="n">normalization</span>
+<span class="n">shareciteimprove</span> <span class="n">this</span> <span class="n">question</span>
+<span class="n">edited</span> <span class="n">Sep</span> <span class="mi">3</span> <span class="s1">&#39;12 at 11:33</span>
+
+<span class="n">chl</span><span class="err">♦</span>
+<span class="mf">41.9</span><span class="n">k6150288</span>
+<span class="n">asked</span> <span class="n">Sep</span> <span class="mi">3</span> <span class="s1">&#39;12 at 8:56</span>
+
+<span class="n">d</span><span class="o">.</span><span class="n">putto</span>
+<span class="mi">3262412</span>
+<span class="mi">5</span>	 	
+<span class="n">Normalising</span> <span class="n">typically</span> <span class="n">means</span> <span class="n">to</span> <span class="n">transform</span> <span class="n">your</span> <span class="n">observations</span> <span class="n">xx</span> <span class="n">into</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">(</span><span class="n">where</span> <span class="n">ff</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">measurable</span><span class="p">,</span> <span class="n">typically</span> <span class="n">continuous</span><span class="p">,</span> <span class="n">function</span><span class="p">)</span> <span class="n">such</span> <span class="n">that</span> <span class="n">they</span> <span class="n">look</span> <span class="n">normally</span> <span class="n">distributed</span><span class="o">.</span> <span class="n">Some</span> <span class="n">examples</span> <span class="n">of</span> <span class="n">transformations</span> <span class="k">for</span> <span class="n">normalising</span> <span class="n">data</span> <span class="n">are</span> <span class="n">power</span> <span class="n">transformations</span><span class="o">.</span> <span class="n">Scaling</span> <span class="n">simply</span> <span class="n">means</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">=</span><span class="n">cxf</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">=</span><span class="n">cx</span><span class="p">,</span> <span class="n">c</span><span class="err">∈</span><span class="n">Rc</span><span class="err">∈</span><span class="n">R</span><span class="p">,</span> <span class="n">this</span> <span class="ow">is</span><span class="p">,</span> <span class="n">multiplying</span> <span class="n">your</span> <span class="n">observations</span> <span class="n">by</span> <span class="n">a</span> <span class="n">constant</span> <span class="n">cc</span> <span class="n">which</span> <span class="n">changes</span> <span class="n">the</span> <span class="n">scale</span> <span class="p">(</span><span class="k">for</span> <span class="n">example</span> <span class="kn">from</span> <span class="nn">nanometers</span> <span class="n">to</span> <span class="n">kilometers</span><span class="p">)</span><span class="o">.</span> <span class="err">–</span> <span class="n">user10525</span> <span class="n">Sep</span> <span class="mi">3</span> <span class="s1">&#39;12 at 9:04 </span>
+<span class="mi">1</span>	 	
+<span class="n">Related</span> <span class="o">/</span> <span class="n">also</span> <span class="n">of</span> <span class="n">interest</span><span class="p">:</span> <span class="n">whats</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">difference</span><span class="o">-</span><span class="n">between</span><span class="o">-</span><span class="n">normalization</span><span class="o">-</span><span class="ow">and</span><span class="o">-</span><span class="n">standardizati</span><span class="err">‌​</span><span class="n">on</span><span class="o">.</span> <span class="err">–</span> <span class="n">gung</span><span class="err">♦</span> <span class="n">Sep</span> <span class="mi">3</span> <span class="s1">&#39;12 at 13:54</span>
+  	 	
+<span class="n">normalisation</span> <span class="ow">is</span> <span class="n">also</span> <span class="n">a</span> <span class="n">scaling</span> <span class="n">method</span><span class="p">,</span> <span class="n">same</span> <span class="k">as</span> <span class="n">standardisation</span> <span class="err">–</span> <span class="n">user26070</span> <span class="n">May</span> <span class="mi">24</span> <span class="s1">&#39;13 at 10:44</span>
+<span class="n">add</span> <span class="n">a</span> <span class="n">comment</span>
+<span class="mi">4</span> <span class="n">Answers</span>
+<span class="n">active</span> <span class="n">oldest</span> <span class="n">votes</span>
+<span class="n">up</span> <span class="n">vote</span>
+<span class="mi">12</span>
+<span class="n">down</span> <span class="n">vote</span>
+<span class="n">accepted</span>
+<span class="n">I</span> <span class="n">am</span> <span class="ow">not</span> <span class="n">aware</span> <span class="n">of</span> <span class="n">an</span> <span class="s2">&quot;official&quot;</span> <span class="n">definition</span> <span class="ow">and</span> <span class="n">even</span> <span class="k">if</span> <span class="n">there</span> <span class="n">it</span> <span class="ow">is</span><span class="p">,</span> <span class="n">you</span> <span class="n">shouldn</span><span class="s1">&#39;t trust it as you will see it being used inconsistently in practice.</span>
+
+<span class="n">This</span> <span class="n">being</span> <span class="n">said</span><span class="p">,</span> <span class="n">scaling</span> <span class="ow">in</span> <span class="n">statistics</span> <span class="n">usually</span> <span class="n">means</span> <span class="n">a</span> <span class="n">linear</span> <span class="n">transformation</span> <span class="n">of</span> <span class="n">the</span> <span class="n">form</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">=</span><span class="n">ax</span><span class="o">+</span><span class="n">bf</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">=</span><span class="n">ax</span><span class="o">+</span><span class="n">b</span><span class="o">.</span>
+
+<span class="n">Normalizing</span> <span class="n">can</span> <span class="n">either</span> <span class="n">mean</span> <span class="n">applying</span> <span class="n">a</span> <span class="n">transformation</span> <span class="n">so</span> <span class="n">that</span> <span class="n">you</span> <span class="n">transformed</span> <span class="n">data</span> <span class="ow">is</span> <span class="n">roughly</span> <span class="n">normally</span> <span class="n">distributed</span><span class="p">,</span> <span class="n">but</span> <span class="n">it</span> <span class="n">can</span> <span class="n">also</span> <span class="n">simply</span> <span class="n">mean</span> <span class="n">putting</span> <span class="n">different</span> <span class="n">variables</span> <span class="n">on</span> <span class="n">a</span> <span class="n">common</span> <span class="n">scale</span><span class="o">.</span> <span class="n">Standardizing</span><span class="p">,</span> <span class="n">which</span> <span class="n">means</span> <span class="n">subtracting</span> <span class="n">the</span> <span class="n">mean</span> <span class="ow">and</span> <span class="n">dividing</span> <span class="n">by</span> <span class="n">the</span> <span class="n">standard</span> <span class="n">deviation</span><span class="p">,</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">example</span> <span class="n">of</span> <span class="n">the</span> <span class="n">later</span> <span class="n">usage</span><span class="o">.</span> <span class="n">As</span> <span class="n">you</span> <span class="n">may</span> <span class="n">see</span> <span class="n">it</span><span class="s1">&#39;s also an example of scaling. An example for the first would be taking the log for lognormal distributed data.</span>
+
+<span class="n">But</span> <span class="n">what</span> <span class="n">you</span> <span class="n">should</span> <span class="n">take</span> <span class="n">away</span> <span class="ow">is</span> <span class="n">that</span> <span class="n">when</span> <span class="n">you</span> <span class="n">read</span> <span class="n">it</span> <span class="n">you</span> <span class="n">should</span> <span class="n">look</span> <span class="k">for</span> <span class="n">a</span> <span class="n">more</span> <span class="n">precise</span> <span class="n">description</span> <span class="n">of</span> <span class="n">what</span> <span class="n">the</span> <span class="n">author</span> <span class="n">did</span><span class="o">.</span> <span class="n">Sometimes</span> <span class="n">you</span> <span class="n">can</span> <span class="n">get</span> <span class="n">it</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">context</span><span class="o">.</span>
+
+<span class="n">shareciteimprove</span> <span class="n">this</span> <span class="n">answer</span>
+<span class="n">answered</span> <span class="n">Sep</span> <span class="mi">3</span> <span class="s1">&#39;12 at 9:33</span>
+
+<span class="n">Erik</span>
+<span class="mi">5</span><span class="p">,</span><span class="mi">3361238</span>
+<span class="n">add</span> <span class="n">a</span> <span class="n">comment</span>
+<span class="n">up</span> <span class="n">vote</span>
+<span class="mi">10</span>
+<span class="n">down</span> <span class="n">vote</span>
+<span class="n">Scaling</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">personal</span> <span class="n">choice</span> <span class="n">about</span> <span class="n">making</span> <span class="n">the</span> <span class="n">numbers</span> <span class="n">feel</span> <span class="n">right</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">between</span> <span class="n">zero</span> <span class="ow">and</span> <span class="n">one</span><span class="p">,</span> <span class="ow">or</span> <span class="n">one</span> <span class="ow">and</span> <span class="n">a</span> <span class="n">hundred</span><span class="o">.</span> <span class="n">For</span> <span class="n">example</span> <span class="n">converting</span> <span class="n">data</span> <span class="n">given</span> <span class="ow">in</span> <span class="n">millimeters</span> <span class="n">to</span> <span class="n">meters</span> <span class="n">because</span> <span class="n">it</span><span class="s1">&#39;s more convenient, or imperial to metric.</span>
+
+<span class="n">While</span> <span class="n">normalisation</span> <span class="ow">is</span> <span class="n">about</span> <span class="n">scaling</span> <span class="n">to</span> <span class="n">an</span> <span class="n">external</span> <span class="s1">&#39;standard&#39;</span> <span class="o">-</span> <span class="n">the</span> <span class="n">local</span> <span class="n">norm</span> <span class="o">-</span> <span class="n">such</span> <span class="k">as</span> <span class="n">removing</span> <span class="n">the</span> <span class="n">mean</span> <span class="n">value</span> <span class="ow">and</span> <span class="n">dividing</span> <span class="n">by</span> <span class="n">the</span> <span class="n">sample</span> <span class="n">standard</span> <span class="n">deviation</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="n">so</span> <span class="n">that</span> <span class="n">your</span> <span class="nb">sorted</span> <span class="n">data</span> <span class="n">can</span> <span class="n">be</span> <span class="n">compared</span> <span class="k">with</span> <span class="n">a</span> <span class="n">cummulative</span> <span class="n">normal</span><span class="p">,</span> <span class="ow">or</span> <span class="n">a</span> <span class="n">cummulative</span> <span class="n">Poisson</span><span class="p">,</span> <span class="ow">or</span> <span class="n">whatever</span><span class="o">.</span>
+
+<span class="n">So</span> <span class="k">if</span> <span class="n">a</span> <span class="n">lecturer</span> <span class="ow">or</span> <span class="n">manager</span> <span class="n">wants</span> <span class="n">data</span> <span class="s1">&#39;normalised&#39;</span> <span class="n">it</span> <span class="n">means</span> <span class="s2">&quot;re-scale it my way&quot;</span> <span class="p">;</span><span class="o">-</span><span class="p">)</span>
+
+<span class="n">shareciteimprove</span> <span class="n">this</span> <span class="n">answer</span>
+<span class="n">answered</span> <span class="n">Sep</span> <span class="mi">3</span> <span class="s1">&#39;12 at 12:05</span>
+
+<span class="n">Philip</span> <span class="n">Oakley</span>
+<span class="mi">28627</span>
+<span class="n">add</span> <span class="n">a</span> <span class="n">comment</span>
+<span class="n">up</span> <span class="n">vote</span>
+<span class="mi">1</span>
+<span class="n">down</span> <span class="n">vote</span>
+<span class="n">I</span> <span class="n">don</span><span class="s1">&#39;t know if you mean exactly this, but I see a lot of people referring to Normalization meaning data Standardization. Standardization is transforming your data so it has mean 0 and standard deviation 1:</span>
+
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="n">sd</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">I</span> <span class="n">also</span> <span class="n">see</span> <span class="n">people</span> <span class="n">using</span> <span class="n">the</span> <span class="n">term</span> <span class="n">Normalization</span> <span class="k">for</span> <span class="n">Data</span> <span class="n">Scaling</span><span class="p">,</span> <span class="k">as</span> <span class="ow">in</span> <span class="n">transforming</span> <span class="n">your</span> <span class="n">data</span> <span class="n">to</span> <span class="n">a</span> <span class="mi">0</span><span class="o">-</span><span class="mi">1</span> <span class="nb">range</span><span class="p">:</span>
+
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="nb">min</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="nb">min</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">It</span> <span class="n">can</span> <span class="n">be</span> <span class="n">confusing</span><span class="err">!</span>
+
+<span class="n">Both</span> <span class="n">techniques</span> <span class="n">have</span> <span class="n">their</span> <span class="n">pros</span> <span class="ow">and</span> <span class="n">cons</span><span class="o">.</span> <span class="n">When</span> <span class="n">scaling</span> <span class="n">a</span> <span class="n">dataset</span> <span class="k">with</span> <span class="n">too</span> <span class="n">many</span> <span class="n">outliers</span><span class="p">,</span> <span class="n">your</span> <span class="n">non</span><span class="o">-</span><span class="n">outlier</span> <span class="n">data</span> <span class="n">might</span> <span class="n">end</span> <span class="n">up</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">very</span> <span class="n">small</span> <span class="n">interval</span><span class="o">.</span> <span class="n">So</span> <span class="k">if</span> <span class="n">your</span> <span class="n">dataset</span> <span class="n">has</span> <span class="n">too</span> <span class="n">many</span> <span class="n">outliers</span><span class="p">,</span> <span class="n">you</span> <span class="n">might</span> <span class="n">want</span> <span class="n">to</span> <span class="n">consider</span> <span class="n">Standardizing</span> <span class="n">it</span><span class="o">.</span> <span class="n">Nonetheless</span><span class="p">,</span> <span class="n">when</span> <span class="n">you</span> <span class="n">do</span> <span class="n">that</span> <span class="n">you</span> <span class="n">will</span> <span class="n">end</span> <span class="n">up</span> <span class="k">with</span> <span class="n">negative</span> <span class="n">data</span> <span class="p">(</span><span class="n">sometimes</span> <span class="n">you</span> <span class="n">don</span><span class="s1">&#39;t want that) and unbounded data (you might not want that either).</span>
+
+<span class="n">shareciteimprove</span> <span class="n">this</span> <span class="n">answer</span>
+<span class="n">answered</span> <span class="n">May</span> <span class="mi">25</span> <span class="n">at</span> <span class="mi">22</span><span class="p">:</span><span class="mi">04</span>
+
+<span class="n">Renata</span>
+<span class="mi">1113</span>
+<span class="n">add</span> <span class="n">a</span> <span class="n">comment</span>
+<span class="n">up</span> <span class="n">vote</span>
+<span class="mi">1</span>
+<span class="n">down</span> <span class="n">vote</span>
+<span class="n">Centering</span> <span class="n">means</span> <span class="n">substacting</span> <span class="n">the</span> <span class="n">mean</span> <span class="n">of</span> <span class="n">the</span> <span class="n">random</span> <span class="n">variable</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">variables</span><span class="o">.</span> <span class="n">I</span><span class="o">.</span><span class="n">e</span> <span class="n">x</span> <span class="o">-</span><span class="n">xi</span>
+
+<span class="n">Scalelling</span> <span class="n">means</span> <span class="n">dividing</span> <span class="n">variable</span> <span class="n">by</span> <span class="n">its</span> <span class="n">standard</span> <span class="n">deviation</span><span class="o">.</span> <span class="n">I</span><span class="o">.</span><span class="n">e</span> <span class="n">xi</span> <span class="o">/</span><span class="n">s</span>
+
+<span class="n">Combination</span> <span class="n">of</span> <span class="n">the</span> <span class="n">two</span> <span class="ow">is</span> <span class="n">called</span> <span class="n">normalization</span> <span class="ow">or</span> <span class="n">standization</span><span class="o">.</span> <span class="n">I</span><span class="o">.</span><span class="n">e</span> <span class="n">x</span><span class="o">-</span><span class="n">xi</span><span class="o">/</span><span class="n">s</span>
+
+<span class="n">shareciteimprove</span> <span class="n">this</span> <span class="n">answer</span>
+<span class="n">answered</span> <span class="n">Aug</span> <span class="mi">2</span> <span class="n">at</span> <span class="mi">2</span><span class="p">:</span><span class="mi">48</span>
+
+<span class="n">Frankfurt</span> <span class="n">Ogunfunminiyi</span>
+<span class="mi">111</span>
+  	 	
+<span class="n">The</span> <span class="n">question</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">duplicate</span><span class="o">.</span> <span class="err">–</span> <span class="n">Michael</span> <span class="n">Chernick</span> <span class="n">Aug</span> <span class="mi">2</span> <span class="n">at</span> <span class="mi">3</span><span class="p">:</span><span class="mi">22</span>
+<span class="n">add</span> <span class="n">a</span> <span class="n">comment</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Continuous-vs-Categorical-Data">Continuous vs Categorical Data<a class="anchor-link" href="#Continuous-vs-Categorical-Data">&#182;</a></h5><p>In general, variables (and data) either represent measurements on some continuous scale, or they represent information about some categorical or discrete characteristics.</p>
+<p>For example, the weight, height, and age of respondents in a survey would represent continuous variables; in industrial or medical applications, survival/failure times are also continuous variables. However, a person's gender, occupation, or marital status are categorical or discrete variables: either a person is male or female, never married, married, or divorced, etc.</p>
+<p>Some variables could be considered in either way. For example, a person's rating of someone else's attractiveness on a 4 point scale may be considered a continuous variable, or we may consider it a discrete variable with 4 categories.</p>
+<p>Time series data are usually collected for continuous variables, over time. For example, stock quotes for a particular stock over successive trading days represent a time series of data.</p>
+<p><a href="http://www.statsoft.com/Textbook/Statistical-Advisor/Continuous-vs-Categorical-Data">http://www.statsoft.com/Textbook/Statistical-Advisor/Continuous-vs-Categorical-Data</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nice blog in DATAQUEST about preparing and cleaning data for machine learning,..</p>
+<p><a href="https://www.dataquest.io/blog/machine-learning-preparing-data/">https://www.dataquest.io/blog/machine-learning-preparing-data/</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>How to prepare Data for machine learning...Below are some good links to further sttudy.......</p>
+<p><a href="https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/prepare-data">https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/prepare-data</a></p>
+<p><a href="https://www.altexsoft.com/blog/datascience/preparing-your-dataset-for-machine-learning-8-basic-techniques-that-make-your-data-better/">https://www.altexsoft.com/blog/datascience/preparing-your-dataset-for-machine-learning-8-basic-techniques-that-make-your-data-better/</a></p>
+<p><a href="https://machinelearningmastery.com/how-to-prepare-data-for-machine-learning/">https://machinelearningmastery.com/how-to-prepare-data-for-machine-learning/</a></p>
+<p><a href="https://machinelearningmastery.com/prepare-data-machine-learning-python-scikit-learn/">https://machinelearningmastery.com/prepare-data-machine-learning-python-scikit-learn/</a></p>
+
+</div>
+</div>
 </div>
     </div>
   </div>
